@@ -1,0 +1,60 @@
+package org.Collections;
+
+import java.util.Set;
+import java.util.TreeSet;
+
+public class Tree_Set {
+
+	public static void main(String[] args) {
+		
+		Set<Integer> obj = new TreeSet<>();
+		
+		obj.add(20);
+		obj.add(10);
+		obj.add(50);
+		obj.add(60);
+		obj.add(30);
+		obj.add(40);
+		
+		System.out.println(obj);
+		
+		int size = obj.size();
+		System.out.println(size);
+		
+		boolean contains = obj.contains(50); // it will consider the value not index
+		System.out.println(contains);
+		
+		obj.remove(50);
+		System.out.println(obj);
+		
+//		obj.clear();
+//		System.out.println(obj);
+		
+	Set<Integer> obj1 = new TreeSet<>();
+		
+		obj1.add(20);
+		obj1.add(100);
+		obj1.add(90);
+		obj1.add(45);
+		obj1.add(60);
+		obj1.add(40);
+		
+		System.out.println(obj1);
+		
+//		obj1.addAll(obj);
+//		System.out.println(obj1);
+		
+//		obj1.retainAll(obj);
+//		System.out.println(obj1);
+
+		obj1.removeAll(obj);
+		System.out.println(obj1);
+		
+	}
+}
+
+
+// it will print ascending order
+// it will not allow duplicate values
+// it will not even allow single null value
+
